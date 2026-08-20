@@ -1,0 +1,13 @@
+{
+  "name": "merchant-agent",
+  "private": true,
+  "type": "module",
+  "workspaces": ["apps/*", "packages/*"],
+  "scripts": {
+    "dev": "bun --filter '*' dev",
+    "build": "bun --filter '*' build"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  }
+}
