@@ -3,6 +3,7 @@ import cors from "cors"
 import dotenv from "dotenv"
 import cookieParser from 'cookie-parser';
 import { config } from "./config/config";
+import productroutes from './routes/products.routess'
 
 dotenv.config();
 
@@ -17,6 +18,7 @@ app.use(cors(
     }
 ));
 
+app.use('/api/v1/',productroutes);
 
 app.get('/',(req,res) => {
   res.send("Devdraw API is running");

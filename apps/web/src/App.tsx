@@ -1,8 +1,7 @@
+import Admin from './pages/Admin';
 
 function App() {
-  return (
-    <div className='bg-amber-200 text-3xl'> Hello world App</div>
-  )
+  return <Admin />;
 }
 
-export default App
+export default App;
