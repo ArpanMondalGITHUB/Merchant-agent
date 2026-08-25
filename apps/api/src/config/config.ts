@@ -9,7 +9,8 @@ const required = (name: string): string => {
 
 export const config = {
   port: Number(process.env.PORT ?? 3001),
-  jwtSecret: required("JWT_SECRET"),
   corsOrigin: process.env.CORS_ORIGIN ?? "http://localhost:5173",
-  isProduction: process.env.NODE_ENV === "production",
+  dataBaseUrl:required("DATABASE_URL"),
+  razorPayKeyId:required("RAZORPAY_KEY_ID"),
+  razorPayKeySecret:required("RAZORPAY_KEY_SECRET"),
 };
